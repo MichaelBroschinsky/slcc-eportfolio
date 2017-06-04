@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Michael Broschinsky'
-SITENAME = u'Michael Broschinsky\'s Teaching ePortfolio'
+SITENAME = u'Michael Broschinsky\'s Adjunct ePortfolio'
 SITEURL = ''
 
 PATH = 'content'
@@ -11,6 +11,15 @@ PATH = 'content'
 TIMEZONE = 'US/Mountain'
 
 DEFAULT_LANG = u'en'
+
+DISPLAY_PAGES_ON_MENU = False
+
+ARTICLE_PATHS = ['blog']
+
+SLUGIFY_SOURCE = 'title'
+
+MENUITEMS = (('Home', '/adjunct/'),
+             ('About', '/adjunct/about/'),)
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
